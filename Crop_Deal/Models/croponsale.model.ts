@@ -6,4 +6,5 @@ export class CropOnSale{
     cropQty: number=0;
     cropPrice: number=0;
     farmerId: number=0;
+    cropImage:string='';
 }

@@ -10,6 +10,11 @@ import { CropService } from 'Service/crop.service';
 })
 export class CropComponent implements OnInit {
 
+  p:number=1;
+  searchText:any;
+  totalLength:any;
+  page:number=1;
+
   croplist : Crop[]=[];
 
   constructor(private service: CropService) {
@@ -26,6 +31,8 @@ export class CropComponent implements OnInit {
   getAll(){
     this.service.getAllCrop().subscribe(result => {
       this.croplist = result;
+      this.totalLength = result.length;
+      console.log(this.croplist);
     });
   }
   delete(cropId: any) {

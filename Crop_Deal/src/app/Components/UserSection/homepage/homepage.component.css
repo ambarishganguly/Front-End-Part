@@ -13,7 +13,9 @@
     width: 100%;
     
 } */
-
+body{
+    display: flex;
+}
 
 .one{
     position: absolute;

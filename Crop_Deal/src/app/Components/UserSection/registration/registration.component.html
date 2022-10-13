@@ -11,13 +11,13 @@
                             <div class="form-group pt-3">
                                 <div class="input-field">
                                     <span class="fa fa-user p-2"></span>
-                                    <input type="text" placeholder="Username" name="Username" #Name="ngModel" [(ngModel)]="service.formData.UserName">
+                                    <input type="text" placeholder="Username" name="Username" #Name="ngModel" [(ngModel)]="service.formData.UserName" required>
                                 </div>
                             </div>
                             <div class="form-group pt-3">
                                 <div class="input-field">
                                     <span class="fa fa-lock p-2"></span>
-                                    <input type="email" placeholder="Email" name="Email" #Email="ngModel" [(ngModel)]="service.formData.UserEmail">
+                                    <input type="email" placeholder="Email" name="Email" #Email="ngModel" [(ngModel)]="service.formData.UserEmail" required>
                                 </div>
                             </div>
                             <div class="form-group pt-3">

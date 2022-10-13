@@ -29,7 +29,4 @@ export class LoginService {
     this.router.navigateByUrl('/this');
   }
 
-  // postLogin(){
-  //   return this.http.post(this.baseUrl,this.formData)
-  // }
 }

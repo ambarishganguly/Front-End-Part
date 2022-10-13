@@ -15,6 +15,10 @@ import { SigninComponent } from './Components/AdminSection/signin/signin.compone
 import { Token } from '@angular/compiler';
 import { TokenInterceptorService } from 'Service/token-interceptor.service';
 import { JwtModule } from '@auth0/angular-jwt';
+import { CroponsaleComponent } from './Components/UserSection/croponsale/croponsale.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 export function tokengetter(){
   return localStorage.getItem("jwt");
@@ -30,11 +34,14 @@ export function tokengetter(){
     RegistrationComponent,
     CropComponent,
     SigninComponent,
+    CroponsaleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
     HttpClientModule,
     ReactiveFormsModule,
     JwtModule.forRoot({

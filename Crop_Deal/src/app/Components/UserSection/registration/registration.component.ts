@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistrationService } from 'Service/registration.service';
+import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -9,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor(public service:RegistrationService) { }
+  constructor(public service:RegistrationService, private route:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,6 +20,7 @@ export class RegistrationComponent implements OnInit {
       (res)=>{
         console.log('submitted Successfully to database');
         alert('Profile Created Successfully');
+        this.route.navigate(['']);
       },
       (err)=>{
         console.log('error');

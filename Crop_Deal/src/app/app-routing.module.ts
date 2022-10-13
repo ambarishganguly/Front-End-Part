@@ -5,13 +5,15 @@ import { LoginComponent } from './Components/UserSection/login/login.component';
 import { RegistrationComponent } from './Components/UserSection/registration/registration.component';
 import { CropComponent } from './Components/UserSection/crop/crop.component';
 import { SigninComponent } from './Components/AdminSection/signin/signin.component';
+import { CroponsaleComponent } from './Components/UserSection/croponsale/croponsale.component';
 
 const routes: Routes = [
   {path:'', component :HomepageComponent },
   {path:'login', component :LoginComponent },
   {path:'registration', component:RegistrationComponent},
   {path:'crop', component:CropComponent},
-  {path:'this', component:SigninComponent}
+  {path:'this', component:SigninComponent},
+  {path:'onSale',component:CroponsaleComponent}
 ];
 
 @NgModule({
